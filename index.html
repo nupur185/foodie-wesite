@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodie.com</title>
+<link rel="stylesheet" href="foodie.css">
+</head>
+<body>
+    
+ <header>
+  <div class="headmost">
+   <div class="first">
+    <div class="brand box">
+     <h1>
+      <div class="logo"><span>Foodie</span></div>
+     </h1>
+    </div>
+    <div class="search box">
+      <div class="location">
+        <span class="location-icon">📍</span>
+        <span class="location-text"><input type="text" id="locate" placeholder=" 1, Ashoka Rd, Hanu"></span>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="divider"></div>
+      <div class="search-input">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchbar" placeholder="Search for restaurant, cuisine or a dish">
+      </div>
+    </div>
+    <div class="log box"><button id="open-login">Log in</button></div>
+    <div class="sign box"><button id="open-signup">Sign up</button></div>
+   </div>
+
+
+<!--login signup slider-->
+<div class="up-show"> 
+<div class="cont">
+  <div id="cut" class="cut">x</div>
+  <div class="btn-box">
+    <button id="btn-login">Login</button>
+    <button id="btn-signup">Sign Up</button>
+    <div id="slid"></div>
+  </div>
+
+  <form id="login-form" class="form">
+    <input type="text" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <div id="ask1"><p id="ques1">Not an existing User?</p><a href="#" id="no">Sign Up to Create a New Account</a></div>
+  </form>
+  
+  <form id="signup-form" class="form hidd">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Sign Up</button>
+    <div id="ask2"><p id="ques2">Already an Existing User?</p><a href="#" id="yes">Login</a></div>
+  </form>
+</div></div>
+
+<!---->
+
+   <div class="second">
+    <div class="dining box">
+     <div class="images box">
+      <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" alt="dining image" class="img3">
+     </div>
+     <div class="dine box">
+      <h2>Dining Out</h2>
+     </div>
+    </div>
+    <div class="delivery box">
+      <div class="images box">
+     <img src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" alt="" class="img3">
+      </div>
+     <div class="deliving box">
+     <h2>Delivery</h2>
+    </div></div>
+    <div class="nightlife box">
+      <div class="images box">
+     <img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" class="img3">
+    </div>
+    <div class="nighting box">
+      <h2>NightLife</h2>
+    </div>
+  </div>
+</div>
+ </header>
+
+<div id="head">
+ <button id="filters">Filters</button>
+ <button id="offering">Offers</button>
+ <button id="rating">Rating 4.5+</button>
+ <button id="alcohol">Serves Alcohol</button>
+ <button id="open">Open Now</button>
+</div>
+<!-- Filter options popup-->
+<div id="filterpopup" class="hidden">
+ <h3>Choose Filter</h3>
+ <div class="filteroption">
+  <input type="radio" id="sortbyrating" name="filteroption" value="rating">
+  <label for="sortbyrating">Sort By Rating</label>
+ </div>
+<div class="filteroption">
+    <input type="radio" id="sorthightolow" name="filteroption" value="highlow">
+    <label for="sorthightolow">High to Low (Price)</label>
+</div>
+<div class="filteroption">
+    <input type="radio" id="costoption" name="filteroption" value="costlowhigh">
+    <label for="costoption">Cost: Low to High</label>
+</div>
+<div class="filteroption">
+    <input type="radio" id="distanceoption" name="filteroption" value="distance">
+    <label for="distanceoption">Distance</label>
+</div>
+<div id="flclose"><a href="">Close all filters</a></div>
+<button id="applyfilter">Apply</button>
+<button id="closefilter">Close</button>
+</div>
+<!-- insert all the cards here-->
+<div id="root"></div>
+
+<!-- first footer -->
+<div class="container">
+    <h2>Explore options near me</h2>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Popular cuisines near me</div>
+        <div class="accordion-content">Apply distance filter to get List of cuisines near you...</div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Popular restaurant types</div>
+        <div class="accordion-content">Apply Rating filter to get List of popular restaurant...</div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Explore Dining Cities at Foodie</div>
+        <div class="accordion-content">City-based dining options...</div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Restaurants in Popular Locations</div>
+        <div class="accordion-content">Popular location restaurants...</div>
+      </div>
+    </div>
+  </div>
+
+<!-- last footer -->
+
+<footer class="zomato-footer">
+    <div class="footer-container">
+
+      <div class="footer-logo">
+        <h1>Foodie</h1>
+      </div>
+
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h4>ABOUT FOODIE</h4>
+          <ul>
+            <li>Who We Are</li>
+            <li>Blog</li>
+            <li>Work With Us</li>
+            <li>Investor Relations</li>
+            <li>Report Fraud</li>
+            <li>Press Kit</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>FOODVERSE</h4>
+          <ul>
+            <li>Foodie</li>
+            <li>Blinkit</li>
+            <li>District</li>
+            <li>Feeding India</li>
+            <li>Hyperpure</li>
+            <li>Foodie Live</li>
+            <li>fooderland</li>
+            <li>Weather Union</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>FOR RESTAURANTS</h4>
+          <ul>
+            <li>Partner With Us</li>
+            <li>Apps For You</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>LEARN MORE</h4>
+          <ul>
+            <li>Privacy</li>
+            <li>Security</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>SOCIAL LINKS</h4>
+          <div class="social-icons">
+            <span>🔗</span><span>📷</span><span>✖️</span><span>▶️</span><span>📘</span>
+          </div>
+          <div class="app-links">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="App Store" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.
+          All trademarks are properties of their respective owners. 2023–2025 © Foodie™ Ltd. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="./foodie.js"></script>
+</body>
+</html>
