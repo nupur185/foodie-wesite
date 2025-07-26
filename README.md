@@ -58,7 +58,7 @@ All components are responsive and designed for user-friendly navigation
 
 ✅ How to Run Locally
 
-git clone https://github.com/nupur185/foodie.com.git
+git clone https://github.com/nupur185/foodie-website.git
 
 cd foodie.com
 
