@@ -8,22 +8,22 @@
 
 ## 🛠 Built With
 
-- ✅ *HTML5* – clean semantic structure
-- 🎨 *CSS3* – custom styling and responsiveness
-- ⚡ *JavaScript (Vanilla)* – interactivity (no frameworks)
+-  *HTML5* – clean semantic structure
+-  *CSS3* – custom styling and responsiveness
+-  *JavaScript (Vanilla)* – interactivity (no frameworks)
 
 ---
 
-## 🧩 Key Features
+##  Key Features
 
-### 🧭 Navigation Header
+###  Navigation Header
 
 - FOODIE.COM brand with animation
 - *Location Input* to change city
 - *Search Bar* for restaurant/cuisine/dish
 - Animated *Login/Signup Toggle* using sliding form panel
 
-### 🧰 Filter Panel (JS Interactivity)
+###  Filter Panel (JS Interactivity)
 
 - Filters include:
   - ✔ Rating
@@ -32,24 +32,24 @@
   - 🎁 Offers
   - 📍 Distance
 
-### 🧾 Restaurant Cards (Main Container)
+###  Restaurant Cards (Main Container)
 
 - Multiple cards with restaurant details:
   - Name, cuisine, rating, location
 
-### 🔐 Login/Signup Panel (JS Controlled)
+###  Login/Signup Panel (JS Controlled)
 
 - A sliding panel for *login and signup*
  
-📂 Footer Accordion 
+ Footer Accordion 
 Sections
 
-📱 Fully Responsive
+ Fully Responsive
 Media queries ensure mobile-friendliness
 
 Grid & flex layout for better scalability
 
-🧠 How It Works
+ How It Works
 All buttons (filter, accordion, login/signup) are wired through Vanilla JavaScript
 
 No backend — just frontend logic with toggleable components
