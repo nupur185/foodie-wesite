@@ -2,10 +2,6 @@
 
 *Foodie.com* is a fully responsive restaurant aggregator website designed using only *HTML, **CSS, and **Vanilla JavaScript*. It simulates a modern food discovery platform with dynamic UI elements such as filters, login/signup slider, restaurant cards, and an interactive footer.
 
-## 🚀 Live Preview
-
-📌 https://6856f9d0ed2d0e8cee858877--delightful-sopapillas-64c535.netlify.app/
-
 ## 🛠 Built With
 
 -  *HTML5* – clean semantic structure
